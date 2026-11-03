@@ -1,0 +1,43 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment & Secret Credentials
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Sensitive Database Exports & PII Dumps
+*-export.json
+*rtdb-export*.json
+woshild-*-export.json
+*.sqlite3
+*.dump
+*.sql
+
+# Logs & Temporary Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor & Workspace Configs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build & Dependency Artifacts
+node_modules/
+dist/
+.astro/
+.cache/
