@@ -1,0 +1,48 @@
+# ==============================================================================
+# SafeVaani — GitHub Linguist Language Detection Configuration
+# Configured for: 70% Python (ML / Audio Threat Detection) & 30% React / MERN
+# ==============================================================================
+
+# Exclude static site HTML markup and CSS styles from language breakdown
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.json linguist-detectable=false
+*.webmanifest linguist-detectable=false
+*.svg linguist-detectable=false
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.ico linguist-detectable=false
+*.wav linguist-detectable=false
+
+# Exclude compiled Astro client bundles and vector artwork
+_astro/** linguist-vendored=true
+_astro/** linguist-detectable=false
+art/** linguist-vendored=true
+brand/** linguist-vendored=true
+
+# Exclude documentation, blog articles, and comparison matrix from code stats
+*.md linguist-documentation=true
+blog/** linguist-documentation=true
+compare/** linguist-documentation=true
+
+# ------------------------------------------------------------------------------
+# Core Programming Languages (Target Ratio: ~70% Python / ~30% React & MERN)
+# ------------------------------------------------------------------------------
+
+# Python Machine Learning & Audio Services (~70%)
+*.py linguist-detectable=true
+*.py linguist-language=Python
+ML-MODEL/** linguist-language=Python
+emotion-detection/src/** linguist-language=Python
+services/** linguist-language=Python
+
+# React, Node & TypeScript Frontend / MERN Stack (~30%)
+*.ts linguist-detectable=true
+*.ts linguist-language=TypeScript
+*.tsx linguist-detectable=true
+*.tsx linguist-language=TypeScript
+*.js linguist-detectable=true
+*.js linguist-language=JavaScript
+*.jsx linguist-detectable=true
+*.jsx linguist-language=JavaScript
+emotion-detection/frontend/** linguist-detectable=true
